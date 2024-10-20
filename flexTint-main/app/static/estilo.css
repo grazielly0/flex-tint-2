@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"], input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-check {
+    width: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-check input[type="radio"] {
+    margin-right: 10px;
+}
+
+button, .btn-outline-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button:hover, .btn-outline-primary:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a button {
+    background-color: #f8f9fa;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a button:hover {
+    background-color: #007BFF;
+    color: white;
+}

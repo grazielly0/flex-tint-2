@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+   <div class="atualizar">
+      <form class="form" action="/excluir" method="POST">
+        <h3>Excluir</h3>
+
+        <label>CPF:</label>
+        <input class="botton" type="text" name="cpf" id="cpf"/><br><br>
+
+        <label>Nome:</label>
+        <input class="botton" type="text" name="nome" id="nome"/><br><br>
+
+        <button class="btn btn-outline-primary" >Excluir</button>
+      </form>
+   </div>
+
+{% endblock %}

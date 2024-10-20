@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+  <div class="atualize">
+    <form class="form" action="/atualize" method="POST">
+
+      <h4>Atualizar</h4>
+      <label>CPF:</label><input class="botton" type="text" name="cpf" id="cpf" required/><br><br>
+
+      <label>Nome:</label><input class="botton" type="text" name="nome" id="nome"/><br><br>
+
+      <label>Telefone:</label><input class="botton" type="text" name="telefone" id="telefone"/><br><br>
+
+      <label>Endereço:</label><input class="botton" type="text" name="endereco" id="endereco"/><br><br>
+
+      <h2>Formas de Pagamento</h2><br><br>
+
+      <img style="margin: 0 auto;" src="static/pagamento.png" class="object-fit-sm-contain border rounded" alt="..."><br><br>
+
+      <div class="form-check">
+        <input class="form-check-input" name="pagamento" type="radio" value="Débito" id="Débito">
+        <label class="form-check-label" for="Débito">Débito</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" name="pagamento" value="PIX" type="radio" id="Pix" checked>
+        <label class="form-check-label" for="Pix">Pix</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" value="Crédito" name="pagamento" type="radio" id="Crédito">
+        <label class="form-check-label" for="Crédito">Crédito</label>
+      </div>
+
+      <br><br>
+      <button type="submit" class="btn btn-outline-primary">Atualizar</button>
+
+    </form><br><br>
+
+    <a href="/excluir"><button type="button" class="btn btn-outline-primary">Excluir</button></a>
+    <a href="/index"><button type="button" class="btn btn-outline-primary">Voltar</button></a>
+
+  </div>
+
+{% endblock %}
