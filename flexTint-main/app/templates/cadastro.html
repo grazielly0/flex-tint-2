@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block conteudo %}
   <form class="form" action="/cadastrarUsuario" method="POST">
-    <h1>CADASTRO</h1>
+    <h2>CADASTRO</h2>
     <br><br>
 
     <label>CPF:</label>
@@ -22,29 +22,29 @@
 
     <h2>Formas de Pagamento</h2>
     <br><br>
-      <img src="static/pagamento.png" class="object-fit-sm-contain border rounded" alt="...">
+      <img  style="margin-left: 40%;"  src="static/pagamento.png"  class="object-fit-sm-contain border rounded" alt="float: left;">
     <br><br>
 
-    <div class="form-check">
-      <input class="form-check-input" name="pagamento" type="radio" value="Débito" id="Débito">
+    <div class="form-check ">
+      <input class="form-check-input checkbox-person-grazy" name="pagamento" type="radio" value="Débito" id="Débito">
       <label class="form-check-label" for="Débito">Débito</label>
     </div>
 
-    <div class="form-check">
-      <input class="form-check-input" name="pagamento" value="PIX" type="radio" id="Pix" checked>
+    <div class="form-check ">
+      <input class="form-check-input checkbox-person-grazy" name="pagamento" value="PIX" type="radio" id="Pix" checked>
       <label class="form-check-label" for="Pix">Pix</label>
     </div>
 
     <div class="form-check">
-      <input class="form-check-input" value="Crédito" name="pagamento" type="radio" id="Crédito">
+      <input class="form-check-input checkbox-person-grazy " value="Crédito" name="pagamento" type="radio" id="Crédito">
       <label class="form-check-label" for="Crédito">Crédito</label>
     </div>
 
     <br><br>
-    <button type="submit" class="btn btn-outline-primary">Cadastrar</button>
+    <button type="submit" class="btn btn-outline-primary btn-person-grazy">Cadastrar</button>
 
-    <a href="/excluir"><button type="button" class="btn btn-outline-primary">Excluir</button></a>
+    <a href="/excluir"><button type="button" class="btn btn-outline-primary btn-person-grazy">Excluir</button></a>
 
-    <a href="/index"><button type="button" class="btn btn-outline-primary">Voltar</button></a>
+    <a href="/index"><button type="button" class="btn btn-outline-primary btn-person-grazy">Voltar</button></a>
   </form>
 {% endblock %}

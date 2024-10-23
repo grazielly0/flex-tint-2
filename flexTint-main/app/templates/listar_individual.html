@@ -4,9 +4,9 @@
     <h2>Buscar Cadastro</h2>
 
     <form action="/listarIndividual" method="POST">
-      <label for="cpf">Digite o CPF:</label>
+      <label for="cpf">CPF:</label>
       <input type="text" id="cpf" name="cpf" required placeholder="Informe o CPF">
-      <button type="submit" class="btn btn-outline-primary">Buscar</button>
+      <button type="submit" class="btn btn-outline-primary btn-person-grazy">Buscar</button>
     </form>
 
     {% if usuarios %}
@@ -29,6 +29,6 @@
       </div>
     {% endif %}
 
-      <a href="/index"><button class="btn btn-outline-primary">Voltar</button></a>
+      <a href="/index"><button class="btn btn-outline-primary btn-person-grazy">Voltar</button></a>
   </div>
 {% endblock %}

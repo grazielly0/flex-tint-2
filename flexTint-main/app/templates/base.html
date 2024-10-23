@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light" style="background-color: #f8f9fa;">
+    <nav class="navbar navbar-expand-lg bg-#f6c8c7" style="background-color: #f6c8c7;">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index">
                 <img src="static/logo.png" height="50" alt="Logo">
@@ -32,5 +32,49 @@
     <div class="container mt-5">
         {% block conteudo %}{% endblock %}
     </div>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+
+    <br><br>
+
+    <footer style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <div style="flex: 1; padding: 10px;">
+            <h4 style="margin-bottom: 10px;">Sobre nós</h4>
+            <p style="line-height: 1.6;">Somos uma empresa focada em fornecer serviços de qualidade e soluções inovadoras para a sua estética.</p>
+        </div>
+        <div style="flex: 1; padding: 10px;">
+            <h4 style="margin-bottom: 10px;">Local</h4>
+           <a href="https://maps.app.goo.gl/9Tpd7wQehUKyXrVS8"><img src="static/mapa.png" ></a>
+            <ul style="list-style-type: none; padding: 0;">
+
+            </ul>
+        </div>
+        <div style="flex: 1; padding: 10px;">
+            <h4 style="margin-bottom: 10px;">Siga-nos</h4>
+            <p>
+              <a href="https://www.facebook.com/" ><img src="static/facebook.png"></a>
+                <br><br>
+                <br><br>
+
+               <a href="https://www.instagram.com/"><img src="static/insta.png"></a>
+                <br><br>
+                <br><br>
+
+                <a href="https://twitter.com/"><img src="static/ttw.png"></a>
+            </p>
+        </div>
+    </div>
+    <div style="margin-top: 20px; font-size: 14px;">
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
 </body>
 </html>

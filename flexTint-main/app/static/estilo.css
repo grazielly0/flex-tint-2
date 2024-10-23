@@ -1,22 +1,18 @@
-body {
+#body {
     font-family: 'Arial', sans-serif;
     background-color: #f2f2f2;
     color: #333;
 }
 
-h1, h2, h3, h4 {
+.h1, h2, h3, h4 {
     text-align: center;
-    color: #007BFF;
+    color: #CD7C8D;
+    font-family:'Brush Script MT, Brush Script Std, cursive';
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+
+
+
 
 label {
     font-weight: bold;
@@ -56,11 +52,11 @@ button, .btn-outline-primary {
     margin-bottom: 10px;
 }
 
-button:hover, .btn-outline-primary:hover {
+.button:hover, .btn-outline-primary:hover {
     background-color: #0056b3;
 }
 
-footer {
+.footer {
     text-align: center;
     margin-top: 50px;
 }
@@ -69,14 +65,34 @@ a {
     text-decoration: none;
 }
 
-a button {
+button{
     background-color: #f8f9fa;
     color: #007BFF;
     border: 1px solid #007BFF;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a button:hover {
-    background-color: #007BFF;
-    color: white;
+.btn-person-grazy:hover {
+    background-color: #ffcbdb;
 }
+
+.btn-person-grazy{
+background-color: #CD7C8D;
+--bs-btn-active-bg: #CD7C8D;
+}
+
+.form-check-input-person-grazy:checked {
+    background-color: #CD7C8D;
+    border-color: #CD7C8D;
+}
+
+.btn-person-grazy:active {
+    background-color: #CD7C8D;
+}
+
+.checkbox-person-grazy:checked {
+    background-color:  #ffe0ff;
+    border-color: #FFFFFF;
+
+}
+
